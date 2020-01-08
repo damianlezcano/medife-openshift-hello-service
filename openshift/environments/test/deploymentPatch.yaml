@@ -1,12 +1,12 @@
 spec:
-  replicas: 1
+  replicas: 0
   template:
     spec:
       containers:
       - name: hello-service
         resources:
           limits:
-            cpu: 500m
+            cpu: 450m
             memory: 768Mi
           requests:
             cpu: 200m
