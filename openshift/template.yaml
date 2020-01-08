@@ -65,20 +65,20 @@ objects:
               path: /
               port: 8080
               scheme: HTTP
-            initialDelaySeconds: 10
+            initialDelaySeconds: 20
             periodSeconds: 20
             successThreshold: 1
-            timeoutSeconds: 1
+            timeoutSeconds: 5
           readinessProbe:
             failureThreshold: 3
             httpGet:
               path: /
               port: 8080
               scheme: HTTP
-            initialDelaySeconds: 10
+            initialDelaySeconds: 20
             periodSeconds: 20
             successThreshold: 1
-            timeoutSeconds: 1
+            timeoutSeconds: 5
           resources:
             limits:
               cpu: 500m
