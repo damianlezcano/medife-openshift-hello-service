@@ -1,0 +1,1 @@
+# medife-openshift-hello-service
