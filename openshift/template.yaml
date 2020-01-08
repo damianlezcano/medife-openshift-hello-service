@@ -65,7 +65,7 @@ objects:
               path: /
               port: 8080
               scheme: HTTP
-            periodSeconds: 10
+            periodSeconds: 30
             successThreshold: 1
             timeoutSeconds: 1
           readinessProbe:
@@ -74,16 +74,16 @@ objects:
               path: /
               port: 8080
               scheme: HTTP
-            initialDelaySeconds: 3
-            periodSeconds: 10
+            initialDelaySeconds: 20
+            periodSeconds: 30
             successThreshold: 1
             timeoutSeconds: 1
           resources:
             limits:
-              cpu: 1
-              memory: 512Mi
+              cpu: 500m
+              memory: 768Mi
             requests:
-              cpu: 1
+              cpu: 200m
               memory: 512Mi
           env:
           - name: HELLO_MESSAGE
